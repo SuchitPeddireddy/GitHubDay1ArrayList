@@ -15,6 +15,16 @@ public class GitHubArrayListDay1{
 		 return both;
 	}
 
+	public static void printList(ArrayList<Integer> x){
+		for(int i = 0; i < x.size(); i++){
+			System.out.print(x.get(i));
+
+			if(i < x.size()-1)
+				System.out.print(", ");
+		}
+
+	}
+
 	public static void main(String[]args){
 
 		ArrayList<Integer> list1 = new ArrayList<>();
@@ -27,10 +37,8 @@ public class GitHubArrayListDay1{
 
 		System.out.print(combineArrayList(list1, list2));
 
-
-
-
-
+		System.out.println();
+		printList(list1);
 
 	}
 }
